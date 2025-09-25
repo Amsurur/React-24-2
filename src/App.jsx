@@ -15,13 +15,11 @@ const App = () => {
   }
 
   async function getCart() {
-
     try {
       const { data } = await AxiosNemon.get(`/Cart/get-products-from-cart`);
 
       console.log(data);
     } catch (error) {
-
       console.error(error);
     }
   }
@@ -36,6 +34,7 @@ const App = () => {
   };
   return (
     <div>
+      <h1>nbsklvnsld;</h1>
       <form onSubmit={handleSubmit} action="">
         <input type="text" />
         <input type="password" />
