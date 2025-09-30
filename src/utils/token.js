@@ -5,7 +5,7 @@ export function SaveToken(token) {
 }
 
 export function GetToken() {
-  return localStorage.getItem("accessToken");
+  return localStorage.getItem("accessToken") || "";
 }
 export const BaseApi = import.meta.env.VITE_API_URL;
 

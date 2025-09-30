@@ -1,5 +1,6 @@
 import axios from "axios";
 import { AxiosNemon, BaseApi, GetToken, SaveToken } from "./utils/token";
+import Layout from "./Layout";
 // import { useNavigate } from "react-router-dom";
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
         <button type="submit"> Login</button>
       </form>
       <button onClick={() => getCart()}>GetCart</button>
+      <Layout />
     </div>
   );
 };
